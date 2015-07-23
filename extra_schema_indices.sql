@@ -1,0 +1,2 @@
+CREATE UNIQUE INDEX sample_attributes_sample_id_attr_name on sample_attributes(sample_ID,attr_name);
+CREATE INDEX sample_attributes_attr_name_idx ON sample_attributes(attr_name);
