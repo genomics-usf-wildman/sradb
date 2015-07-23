@@ -23,21 +23,18 @@ __PACKAGE__->table("experiment");
 
 =head1 ACCESSORS
 
-=head2 experiment_ID
+=head2 experiment_id
 
-  accessor: 'experiment_id'
-  data_type: 'real'
+  data_type: 'integer'
   is_nullable: 1
 
-=head2 bamFile
+=head2 bamfile
 
-  accessor: 'bam_file'
   data_type: 'text'
   is_nullable: 1
 
-=head2 fastqFTP
+=head2 fastqftp
 
-  accessor: 'fastq_ftp'
   data_type: 'text'
   is_nullable: 1
 
@@ -239,12 +236,12 @@ __PACKAGE__->table("experiment");
 =cut
 
 __PACKAGE__->add_columns(
-  "experiment_ID",
-  { accessor => "experiment_id", data_type => "real", is_nullable => 1 },
-  "bamFile",
-  { accessor => "bam_file", data_type => "text", is_nullable => 1 },
-  "fastqFTP",
-  { accessor => "fastq_ftp", data_type => "text", is_nullable => 1 },
+  "experiment_id",
+  { data_type => "integer", is_nullable => 1 },
+  "bamfile",
+  { data_type => "text", is_nullable => 1 },
+  "fastqftp",
+  { data_type => "text", is_nullable => 1 },
   "experiment_alias",
   { data_type => "text", is_nullable => 1 },
   "experiment_accession",
@@ -326,8 +323,8 @@ __PACKAGE__->add_columns(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07042 @ 2015-07-21 17:19:57
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:7mHkSQ5EFu8tuWEKxuJyLA
+# Created by DBIx::Class::Schema::Loader v0.07042 @ 2015-07-23 10:33:13
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:xCwTKnoh1KFqbB/lagcEoQ
 
 
 # You can replace this text with custom code or comments, and it will be preserved on regeneration

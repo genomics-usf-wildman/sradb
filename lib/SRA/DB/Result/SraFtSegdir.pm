@@ -26,12 +26,12 @@ __PACKAGE__->table("sra_ft_segdir");
 =head2 level
 
   data_type: 'integer'
-  is_nullable: 0
+  is_nullable: 1
 
 =head2 idx
 
   data_type: 'integer'
-  is_nullable: 0
+  is_nullable: 1
 
 =head2 start_block
 
@@ -50,16 +50,16 @@ __PACKAGE__->table("sra_ft_segdir");
 
 =head2 root
 
-  data_type: 'blob'
+  data_type: 'bytea'
   is_nullable: 1
 
 =cut
 
 __PACKAGE__->add_columns(
   "level",
-  { data_type => "integer", is_nullable => 0 },
+  { data_type => "integer", is_nullable => 1 },
   "idx",
-  { data_type => "integer", is_nullable => 0 },
+  { data_type => "integer", is_nullable => 1 },
   "start_block",
   { data_type => "integer", is_nullable => 1 },
   "leaves_end_block",
@@ -67,26 +67,12 @@ __PACKAGE__->add_columns(
   "end_block",
   { data_type => "integer", is_nullable => 1 },
   "root",
-  { data_type => "blob", is_nullable => 1 },
+  { data_type => "bytea", is_nullable => 1 },
 );
 
-=head1 PRIMARY KEY
 
-=over 4
-
-=item * L</level>
-
-=item * L</idx>
-
-=back
-
-=cut
-
-__PACKAGE__->set_primary_key("level", "idx");
-
-
-# Created by DBIx::Class::Schema::Loader v0.07042 @ 2015-07-21 17:19:57
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:lDxJbBeoX0MbQjbZksm1Sw
+# Created by DBIx::Class::Schema::Loader v0.07042 @ 2015-07-23 10:33:13
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:5gzcHJzwAylWNzgHS4gRIg
 
 
 # You can replace this text with custom code or comments, and it will be preserved on regeneration

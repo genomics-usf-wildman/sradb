@@ -23,10 +23,9 @@ __PACKAGE__->table("fastq");
 
 =head1 ACCESSORS
 
-=head2 fastq_ID
+=head2 fastq_id
 
-  accessor: 'fastq_id'
-  data_type: 'real'
+  data_type: 'integer'
   is_nullable: 1
 
 =head2 run_accession
@@ -62,8 +61,8 @@ __PACKAGE__->table("fastq");
 =cut
 
 __PACKAGE__->add_columns(
-  "fastq_ID",
-  { accessor => "fastq_id", data_type => "real", is_nullable => 1 },
+  "fastq_id",
+  { data_type => "integer", is_nullable => 1 },
   "run_accession",
   { data_type => "text", is_nullable => 1 },
   "file_name",
@@ -79,8 +78,8 @@ __PACKAGE__->add_columns(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07042 @ 2015-07-21 17:19:57
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:ckYLal7Jc95HEILeLh0Ccg
+# Created by DBIx::Class::Schema::Loader v0.07042 @ 2015-07-23 10:33:13
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:QWnuVXC6OcF0HyKMIMRU2w
 
 
 # You can replace this text with custom code or comments, and it will be preserved on regeneration

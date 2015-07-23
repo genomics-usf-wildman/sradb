@@ -23,10 +23,9 @@ __PACKAGE__->table("submission");
 
 =head1 ACCESSORS
 
-=head2 submission_ID
+=head2 submission_id
 
-  accessor: 'submission_id'
-  data_type: 'real'
+  data_type: 'integer'
   is_nullable: 1
 
 =head2 submission_alias
@@ -112,8 +111,8 @@ __PACKAGE__->table("submission");
 =cut
 
 __PACKAGE__->add_columns(
-  "submission_ID",
-  { accessor => "submission_id", data_type => "real", is_nullable => 1 },
+  "submission_id",
+  { data_type => "integer", is_nullable => 1 },
   "submission_alias",
   { data_type => "text", is_nullable => 1 },
   "submission_accession",
@@ -149,8 +148,8 @@ __PACKAGE__->add_columns(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07042 @ 2015-07-21 17:19:57
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:jGjHSCKy2+hV3xKjZRm9hw
+# Created by DBIx::Class::Schema::Loader v0.07042 @ 2015-07-23 10:33:13
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:2jBtyL/0eX7RypIBE4JnUA
 
 
 # You can replace this text with custom code or comments, and it will be preserved on regeneration

@@ -8,4 +8,4 @@ fi;
 dbicdump -I . -o dump_directory=lib \
          -o preserve_case=1 \
          SRA::DB \
-         dbi:SQLite:dbname=SRAmetadb.sqlite
+         dbi:Pg:dbname=sradb

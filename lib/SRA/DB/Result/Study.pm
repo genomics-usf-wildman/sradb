@@ -23,10 +23,9 @@ __PACKAGE__->table("study");
 
 =head1 ACCESSORS
 
-=head2 study_ID
+=head2 study_id
 
-  accessor: 'study_id'
-  data_type: 'real'
+  data_type: 'integer'
   is_nullable: 1
 
 =head2 study_alias
@@ -132,8 +131,8 @@ __PACKAGE__->table("study");
 =cut
 
 __PACKAGE__->add_columns(
-  "study_ID",
-  { accessor => "study_id", data_type => "real", is_nullable => 1 },
+  "study_id",
+  { data_type => "integer", is_nullable => 1 },
   "study_alias",
   { data_type => "text", is_nullable => 1 },
   "study_accession",
@@ -177,8 +176,8 @@ __PACKAGE__->add_columns(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07042 @ 2015-07-21 17:19:57
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:UqCKUHDqyMYfamPkR7Mp7g
+# Created by DBIx::Class::Schema::Loader v0.07042 @ 2015-07-23 10:33:13
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:eqtiOjgzsDeIGSgZyIqYUg
 
 
 # You can replace this text with custom code or comments, and it will be preserved on regeneration

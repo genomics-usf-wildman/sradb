@@ -23,33 +23,28 @@ __PACKAGE__->table("sra");
 
 =head1 ACCESSORS
 
-=head2 sra_ID
+=head2 sra_id
 
-  accessor: 'sra_id'
-  data_type: 'real'
+  data_type: 'integer'
   is_nullable: 1
 
-=head2 SRR_bamFile
+=head2 srr_bamfile
 
-  accessor: 'srr_bam_file'
   data_type: 'text'
   is_nullable: 1
 
-=head2 SRX_bamFile
+=head2 srx_bamfile
 
-  accessor: 'srx_bam_file'
   data_type: 'text'
   is_nullable: 1
 
-=head2 SRX_fastqFTP
+=head2 srx_fastqftp
 
-  accessor: 'srx_fastq_ftp'
   data_type: 'text'
   is_nullable: 1
 
-=head2 run_ID
+=head2 run_id
 
-  accessor: 'run_id'
   data_type: 'real'
   is_nullable: 1
 
@@ -108,9 +103,8 @@ __PACKAGE__->table("sra");
   data_type: 'text'
   is_nullable: 1
 
-=head2 experiment_ID
+=head2 experiment_id
 
-  accessor: 'experiment_id'
   data_type: 'real'
   is_nullable: 1
 
@@ -249,9 +243,8 @@ __PACKAGE__->table("sra");
   data_type: 'text'
   is_nullable: 1
 
-=head2 sample_ID
+=head2 sample_id
 
-  accessor: 'sample_id'
   data_type: 'real'
   is_nullable: 1
 
@@ -305,9 +298,8 @@ __PACKAGE__->table("sra");
   data_type: 'text'
   is_nullable: 1
 
-=head2 study_ID
+=head2 study_id
 
-  accessor: 'study_id'
   data_type: 'real'
   is_nullable: 1
 
@@ -371,9 +363,8 @@ __PACKAGE__->table("sra");
   data_type: 'text'
   is_nullable: 1
 
-=head2 submission_ID
+=head2 submission_id
 
-  accessor: 'submission_id'
   data_type: 'real'
   is_nullable: 1
 
@@ -410,16 +401,16 @@ __PACKAGE__->table("sra");
 =cut
 
 __PACKAGE__->add_columns(
-  "sra_ID",
-  { accessor => "sra_id", data_type => "real", is_nullable => 1 },
-  "SRR_bamFile",
-  { accessor => "srr_bam_file", data_type => "text", is_nullable => 1 },
-  "SRX_bamFile",
-  { accessor => "srx_bam_file", data_type => "text", is_nullable => 1 },
-  "SRX_fastqFTP",
-  { accessor => "srx_fastq_ftp", data_type => "text", is_nullable => 1 },
-  "run_ID",
-  { accessor => "run_id", data_type => "real", is_nullable => 1 },
+  "sra_id",
+  { data_type => "integer", is_nullable => 1 },
+  "srr_bamfile",
+  { data_type => "text", is_nullable => 1 },
+  "srx_bamfile",
+  { data_type => "text", is_nullable => 1 },
+  "srx_fastqftp",
+  { data_type => "text", is_nullable => 1 },
+  "run_id",
+  { data_type => "real", is_nullable => 1 },
   "run_alias",
   { data_type => "text", is_nullable => 1 },
   "run_accession",
@@ -442,8 +433,8 @@ __PACKAGE__->add_columns(
   { data_type => "text", is_nullable => 1 },
   "run_attribute",
   { data_type => "text", is_nullable => 1 },
-  "experiment_ID",
-  { accessor => "experiment_id", data_type => "real", is_nullable => 1 },
+  "experiment_id",
+  { data_type => "real", is_nullable => 1 },
   "experiment_alias",
   { data_type => "text", is_nullable => 1 },
   "experiment_accession",
@@ -498,8 +489,8 @@ __PACKAGE__->add_columns(
   { data_type => "text", is_nullable => 1 },
   "experiment_attribute",
   { data_type => "text", is_nullable => 1 },
-  "sample_ID",
-  { accessor => "sample_id", data_type => "real", is_nullable => 1 },
+  "sample_id",
+  { data_type => "real", is_nullable => 1 },
   "sample_alias",
   { data_type => "text", is_nullable => 1 },
   "sample_accession",
@@ -520,8 +511,8 @@ __PACKAGE__->add_columns(
   { data_type => "text", is_nullable => 1 },
   "sample_attribute",
   { data_type => "text", is_nullable => 1 },
-  "study_ID",
-  { accessor => "study_id", data_type => "real", is_nullable => 1 },
+  "study_id",
+  { data_type => "real", is_nullable => 1 },
   "study_alias",
   { data_type => "text", is_nullable => 1 },
   "study_accession",
@@ -546,8 +537,8 @@ __PACKAGE__->add_columns(
   { data_type => "text", is_nullable => 1 },
   "primary_study",
   { data_type => "text", is_nullable => 1 },
-  "submission_ID",
-  { accessor => "submission_id", data_type => "real", is_nullable => 1 },
+  "submission_id",
+  { data_type => "real", is_nullable => 1 },
   "submission_accession",
   { data_type => "text", is_nullable => 1 },
   "submission_comment",
@@ -563,8 +554,8 @@ __PACKAGE__->add_columns(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07042 @ 2015-07-21 17:19:57
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:SDyeSyKTEUN6jKMb+ifFlA
+# Created by DBIx::Class::Schema::Loader v0.07042 @ 2015-07-23 10:33:13
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:pvtkdMG7Z/a/Y0i9V4PMhg
 
 
 # You can replace this text with custom code or comments, and it will be preserved on regeneration

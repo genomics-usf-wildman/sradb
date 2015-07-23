@@ -23,10 +23,9 @@ __PACKAGE__->table("col_desc");
 
 =head1 ACCESSORS
 
-=head2 col_desc_ID
+=head2 col_desc_id
 
-  accessor: 'col_desc_id'
-  data_type: 'real'
+  data_type: 'integer'
   is_nullable: 1
 
 =head2 table_name
@@ -62,8 +61,8 @@ __PACKAGE__->table("col_desc");
 =cut
 
 __PACKAGE__->add_columns(
-  "col_desc_ID",
-  { accessor => "col_desc_id", data_type => "real", is_nullable => 1 },
+  "col_desc_id",
+  { data_type => "integer", is_nullable => 1 },
   "table_name",
   { data_type => "text", is_nullable => 1 },
   "field_name",
@@ -79,8 +78,8 @@ __PACKAGE__->add_columns(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07042 @ 2015-07-21 17:19:57
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:9HJi2AbpYRjr3RHf5Dnrhw
+# Created by DBIx::Class::Schema::Loader v0.07042 @ 2015-07-23 10:33:13
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:LDr1HgKGS/rqFTw2lAunGw
 
 
 # You can replace this text with custom code or comments, and it will be preserved on regeneration

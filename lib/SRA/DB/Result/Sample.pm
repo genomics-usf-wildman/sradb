@@ -23,10 +23,9 @@ __PACKAGE__->table("sample");
 
 =head1 ACCESSORS
 
-=head2 sample_ID
+=head2 sample_id
 
-  accessor: 'sample_id'
-  data_type: 'real'
+  data_type: 'integer'
   is_nullable: 1
 
 =head2 sample_alias
@@ -127,8 +126,8 @@ __PACKAGE__->table("sample");
 =cut
 
 __PACKAGE__->add_columns(
-  "sample_ID",
-  { accessor => "sample_id", data_type => "real", is_nullable => 1 },
+  "sample_id",
+  { data_type => "integer", is_nullable => 1 },
   "sample_alias",
   { data_type => "text", is_nullable => 1 },
   "sample_accession",
@@ -170,8 +169,8 @@ __PACKAGE__->add_columns(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07042 @ 2015-07-21 17:19:57
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:m4icZRsuDNBncRsVmNDkKQ
+# Created by DBIx::Class::Schema::Loader v0.07042 @ 2015-07-23 10:33:13
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:o8arU1eSzzYkCqY5k46fhg
 
 
 # You can replace this text with custom code or comments, and it will be preserved on regeneration

@@ -23,15 +23,13 @@ __PACKAGE__->table("run");
 
 =head1 ACCESSORS
 
-=head2 run_ID
+=head2 run_id
 
-  accessor: 'run_id'
-  data_type: 'real'
+  data_type: 'integer'
   is_nullable: 1
 
-=head2 bamFile
+=head2 bamfile
 
-  accessor: 'bam_file'
   data_type: 'text'
   is_nullable: 1
 
@@ -133,10 +131,10 @@ __PACKAGE__->table("run");
 =cut
 
 __PACKAGE__->add_columns(
-  "run_ID",
-  { accessor => "run_id", data_type => "real", is_nullable => 1 },
-  "bamFile",
-  { accessor => "bam_file", data_type => "text", is_nullable => 1 },
+  "run_id",
+  { data_type => "integer", is_nullable => 1 },
+  "bamfile",
+  { data_type => "text", is_nullable => 1 },
   "run_alias",
   { data_type => "text", is_nullable => 1 },
   "run_accession",
@@ -178,8 +176,8 @@ __PACKAGE__->add_columns(
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07042 @ 2015-07-21 17:19:57
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:+YDTehzwYfhuAsvF+e+rhQ
+# Created by DBIx::Class::Schema::Loader v0.07042 @ 2015-07-23 10:33:13
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:53I1zoClsjO1OeUpFy+ftg
 
 
 # You can replace this text with custom code or comments, and it will be preserved on regeneration
